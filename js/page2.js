@@ -280,7 +280,7 @@ $(document).ready(function () {
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(listDishID),
             success: function (data) {
-                
+                console.log(data);
                 
             },
             error: function (jqxhr, textStatus, error) {
