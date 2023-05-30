@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js"
+        integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3 class="title">Hello friend! Please take the survey below to help us</h3>
+        <form id="form">
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Others</span>
+                    </label>
+                </div>
+            </div>
+            <div class="survey-details">
+                <div class="input-box">
+                    <span class="title">Age</span>
+                    <input type="number" name="" id="age" placeholder="Enter your age">
+                </div>
+                <div class="input-box">
+                    <span class="title">Weight (kg)</span>
+                    <input type="number" name="" id="weight" placeholder="Enter your weight">
+                </div>
+                <div class="input-box">
+                    <span class="title">Height (cm)</span>
+                    <input type="number" name="" id="height" placeholder="Enter your height">
+                </div>
+                <div class="input-box">
+                    <span class="title">Activity Level</span>
+                    <select name="" id="">
+                        <option value="" selected>Choose one below</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <div class="txt-box">
+                    <span class="title">Some disercv</span>
+                    <textarea name="" id="" cols="30" rows="1"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Continue">
+            </div>
+        </form>
+    </div>
+    <script src="js/home.js"></script>
+</body>
+</html>

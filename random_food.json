@@ -1,0 +1,17 @@
+[
+    
+    {
+        "_id": {
+            "$oid": "645601797af31163359d91dc"
+        },
+        "id": "VEG001",
+        "ingredient_image": "https://cdn.tgdd.vn/Products/Images/7459/276221/bhx/-202207301652244140.jpg",
+        "ingredient_name": "Dưa cải chua",
+        "ingredient_nutrion": [
+            "Carb",
+            "Chất xơ",
+            "Protein",
+            "Vitamin và khoáng chất"
+        ]
+    }
+]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page2.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+    <h2>This is page 2</h2>
+    <button id="random">Pick random food</button>
+    <button id="pick-db">Pich food from database</button>
+    <button id="remove-all">Remove All Food</button>
+    <button id="continue">Continue</button>
+    <h3>List Food</h3>
+    <div class="list-food">
+        <div class="card-container">
+            <div class="card">
+                <span class="remove-icon">x</span>
+                <img src="images/apple.jpg" alt="Apple">
+                <div class="intro">
+                    <h2>Apple</h2>
+                </div>
+            </div>
+            <div class="count">
+                <span class="sub">-</span>
+                <input type="text" value="100">
+                <p>(gram)</p>
+                <span class="add">+</span>
+            </div>
+        </div>
+        <div class="card">
+            <span class="remove-icon">x</span>
+            <img src="images/bitter-lemon.jpg" alt="Bitter Lemon">
+            <div class="intro">
+                <h2>Bitter Lemon</h2>
+            </div>
+        </div>
+        <div class="card">
+            <span class="remove-icon">x</span>
+            <img src="images/mango.png" alt="Mango">
+            <div class="intro">
+                <h2>Mango</h2>
+            </div>
+        </div>
+    </div>
+
+    <dialog data-modal class="modal">
+        
+    </dialog>
+
+    <dialog data-modal class="modal-dishes">
+        <h4>Chọn những món ăn mà bạn nghĩ sẽ nấu được với những nguyên liệu mà bạn đã chọn</h4>
+        <div class="dishes-content">
+            <div class="card-dishes">
+                <span><input type="checkbox"></span>
+                <img src="images/apple.jpg" alt="Apple">
+                <div class="intro">
+                    <h2>Apple</h2>
+                </div>
+            </div>
+        </div>
+        <button id="result">View Result</button>
+    </dialog>
+
+    <dialog data-modal class="modal-result">
+        
+    </dialog>
+
+    <script src="js/page2.js"></script>
+</body>
+
+</html>

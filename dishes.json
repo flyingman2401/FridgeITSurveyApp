@@ -1,0 +1,17 @@
+[
+    {
+        "dish_image": "https://image.cooky.vn/recipe/g5/47821/s640/recipe47821-cook-step5-636942951688669810.jpg",
+        "dish_name": "Canh cải chua thịt bò",
+        "id": "DISH001"
+    },
+    {
+        "dish_image": "https://image.cooky.vn/recipe/g2/18494/s640/recipe18494-636143657308875680.jpg",
+        "dish_name": "Canh cải ngọt nấu tôm khô",
+        "id": "DISH002"
+    },
+    {
+        "dish_image": "https://image.cooky.vn/recipe/g3/29880/s640/recipe-cover-r29880.jpg",
+        "dish_name": "Cải luộc chấm nước tương",
+        "id": "DISH015"
+    }
+]
