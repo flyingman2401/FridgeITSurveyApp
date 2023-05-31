@@ -185,3 +185,52 @@ dialog .item img {
     background: rgb(193, 87, 87);
 }
 
+.modal-result {
+    width: fit-content;
+}
+
+.dish-result-container {
+    display: flex;
+}
+
+.progress-bar {
+    display: flex;
+    
+    width: 250px;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.circular-progress {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+.progress-value {
+    position: absolute;
+    font-weight: 600;
+}
+
+.progress-bar .text {
+    font-weight: 500;
+    font-size: 13px;
+}
+

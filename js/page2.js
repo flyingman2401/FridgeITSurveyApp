@@ -189,6 +189,7 @@ $(document).ready(function () {
         ) {
             dialogDishes.close();
             listDishes.splice(0, listDishes.length);
+            listDishID.splice(0, listDishID.length);
         }
     })
 
@@ -256,6 +257,8 @@ $(document).ready(function () {
 
     $('#result').on('click', function () {
         dialogDishes.close();
+        callAPIGetResultDishes(listDishID);
+        $('.content-result').empty();
         dialogResult.showModal();
     })
 
@@ -280,13 +283,42 @@ $(document).ready(function () {
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(listDishID),
             success: function (data) {
-                console.log(data);
-                
+                renderResultDishes(data);
             },
             error: function (jqxhr, textStatus, error) {
                 // Handle errors here
                 console.log("Error call API: " + error);
             }
         });
+    }
+
+    function renderResultDishes(listDishes) {
+        for (let item of listDishes) {
+            var htmlContent = '<div class="dish-result-container">';
+            if (item.isSelected) {
+                htmlContent += '<input type="checkbox" checked name="" id="">';
+            } else {
+                htmlContent += '<input type="checkbox" name="" id="">';
+            };
+            htmlContent += '<div class="card-dishes">' +
+                '<img src="' + item.dish_image + '" alt="' + item.dish_name + '">' +
+                '<div class="intro">' +
+                '<h2>' + item.dish_name + '</h2>' +
+                '</div>' +
+                '</div>' +
+                '<div class="progress-bar">' +
+                '<div class="circular-progress">' +
+                '<span class="progress-value">' + item.weight * 100 +'%</span>' +
+                '</div>' +
+                '<span class="text">Weight</span>' +
+                '</div>' +
+                '</div>';
+
+            var newElement = $(htmlContent);
+            const circularProgress = newElement.find('.circular-progress')[0];
+            circularProgress.style.background = `conic-gradient(#7d2ae8 ${item.weight * 100 * 3.6}deg, #ededed 0deg)`;
+            
+            $('.content-result').append(newElement);
+        }
     }
 });
